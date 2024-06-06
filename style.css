@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 3rem auto;
+  width: 90%;
+  .header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .cards-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    .card-main {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 25px;
+      width: 30%;
+      overflow: hidden;
+      .card {
+        overflow: hidden;
+        .card-img {
+          height: 320px;
+          img {
+            width: 100%;
+            transition: all 2s ease-in;
+          }
+        }
+      }
+      &:hover {
+        .avto {
+          transform: translateY(-890px);
+        }
+        .cloux {
+          transform: translateY(-1200px);
+        }
+        .petruccio {
+          transform: translateY(-690px);
+        }
+        .toy {
+          transform: translateY(-570px);
+        }
+        .turizm {
+          transform: translateY(-550px);
+        }
+        .tikinti {
+          transform: translateY(-800px);
+        }
+      }
+      h2 {
+        width: fit-content;
+        font-weight: bold;
+      }
+    }
+  }
+}
